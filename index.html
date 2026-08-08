@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Teks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+
+    <header class="header">
+        <div>
+            <h1>Daftar Teks</h1>
+            <p>Salin teks yang ingin digunakan. Tambah teks baru kapan saja tanpa buat project baru.</p>
+        </div>
+
+        <div class="counter">
+            <span id="totalText">0</span>
+            Teks
+        </div>
+    </header>
+
+    <section class="add-panel">
+        <h2>Tambah Teks Baru</h2>
+        <form id="addForm" class="add-form">
+            <textarea
+                id="newTextInput"
+                rows="4"
+                placeholder="Contoh:&#10;Alhamdulillah sudah aman berkat jasa @&#10;Syukur masalah selesai berkat @"
+            ></textarea>
+            <button type="submit" class="add-btn">Tambah Teks</button>
+        </form>
+    </section>
+
+    <section id="textList" class="text-list"></section>
+
+</main>
+
+<div id="toast" class="toast">
+    Teks disalin
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
